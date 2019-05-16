@@ -1,3 +1,8 @@
+katz_deli = []
+other_deli = ["Logan", "Avi", "Spencer"]
+another_deli = ["Amanda", "Annette", "Ruchi", "Jason", "Logan", "Spencer", "Avi", "Joe", "Rachel", "Lindsey"]
+
+
 def line(array)
   if array.length >= 1
     new_array = []
@@ -12,14 +17,14 @@ def line(array)
   end
 end
 
-#line(katz_deli)
+line(katz_deli)
 
 def take_a_number(line, new_person)
   line.push(new_person)
   puts "Welcome, #{new_person}. You are number #{line.length} in line."
 end
 
-#take_a_number(katz_deli, "Ava")
+take_a_number(katz_deli, "Ava")
 
 def now_serving(line)
   if line.length == 0
@@ -30,5 +35,5 @@ def now_serving(line)
   end
 end
 
-#puts now_serving(katz_deli)
+puts now_serving(katz_deli)
 puts katz_deli
